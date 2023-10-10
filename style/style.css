@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+:root{
+    --font1: 'Open Sans', sans-serif;
+
+    --cor1: #1C110A;
+    --cor2: #E4D6A7;
+    --cor3: #30BCED;
+    --cor4: #2A628F;
+    --cor5: #255C99;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--font1);
+    background-color: var(--cor5);
+}
+
+
+section#prin{
+    background-color: var(--cor4);
+}
+div.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    padding-right: 10px;
+    background-color: var(--cor3);
+    
+}
+
+div#mark{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+div.top>nav a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0px 5px;
+    transition-duration: 0.5s;
+}
+
+div.top>nav a:hover{
+    color: white;
+    background-color: black;
+    font-size: 1.5em;
+}
+
+
+
+
+
+/*Aqui começa a parte principal do site*/
+
+div.flex{
+    min-height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#bg{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+}
+div.flex>h1{
+    color: white;
+    font-size: 10vw;
+    font-variant: small-caps;
+    padding: 10px;
+}
+div.flex>h1>#l{
+    color: black;
+}
+
+
+div.flex>aside>p{
+    font-size: 1.2em;
+}
+
+div.flex>aside>p>span{
+    color: white;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    
+}
+div.flex>small{
+    padding: 50px 10px 0px 10px;
+}
+
+/*Section que tem imagens*/
+
+section.normal{
+    min-height: 97vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#bg2{
+    background-image: linear-gradient(to bottom,var(--cor4), var(--cor5));
+}
+
+/*Mensagem de lado*/
+.normal h1{
+    font-variant: small-caps;
+    padding: 50px;
+    font-size: 10vw;
+}
+.normal h1>span{
+    color:white;
+}
+.normal a{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 4vw;
+    padding: 10px;
+    margin: 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.normal a:hover{
+    background-color: black;
+    color: white;
+}
+
+/*            Footer             */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer p{
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 8px;
+}
+footer a:hover{
+    background-color: white;
+    color: black;
+    padding: 2px;
+}
